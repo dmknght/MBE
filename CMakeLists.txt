@@ -7,7 +7,7 @@ enable_testing()
 include_directories("./include")
 
 # Settings
-set(MBE_FLAGS "-m32 -O0 -fno-inline-functions")
+set(MBE_FLAGS "-m32 -O0 -fno-inline-functions -std=gnu++11")
 set(DISABLE_DEP_FLAG "-z execstack")
 set(DISABLE_RELRO_FLAG "-z norelro")
 set(DISABLE_CANARY_FLAG "-fno-stack-protector")
